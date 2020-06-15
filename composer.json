@@ -1,0 +1,23 @@
+{
+    "name": "neo-p/config",
+    "description": "config",
+    "minimum-stability": "dev",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "6xiaowu9",
+            "email": "736518585@qq.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+        "files": [
+            "src/Helper/Function.php"
+        ],
+        "psr-4": {
+            "NeoP\\Config": "src/"
+        }
+    }
+}
