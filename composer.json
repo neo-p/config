@@ -17,7 +17,7 @@
             "src/Helper/Function.php"
         ],
         "psr-4": {
-            "NeoP\\Config": "src/"
+            "NeoP\\Config\\": "src/"
         }
     }
 }
