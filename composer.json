@@ -5,7 +5,8 @@
     "license": "Apache-2.0",
     "require": {
         "php": ">=7.0",
-        "vlucas/phpdotenv": "^4.1"
+        "vlucas/phpdotenv": "^4.1",
+        "neo-p/framework": "^1.0.0"
     },
     "autoload": {
         "files": [
