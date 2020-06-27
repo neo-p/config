@@ -72,6 +72,10 @@ class ConfigRegister
             return [];
         }
 
+        if (! file_exists($path)) {
+            return [];
+        }
+
         $configs = [];
         $finder = new Finder();
         $finder->files()->in($path)->name("*" . $this->extension);
