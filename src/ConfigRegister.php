@@ -68,6 +68,10 @@ class ConfigRegister
 
     private function load(string $path): array
     {
+        if ($path === NULL) {
+            return [];
+        }
+        
         $configs = [];
         $finder = new Finder();
         $finder->files()->in($path)->name("*" . $this->extension);
