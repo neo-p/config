@@ -66,12 +66,12 @@ class ConfigRegister
         return $this->load(Config::getService(self::CONFIG_KEY . "." . self::CONFIG_PRIVATE_KEY));
     }
 
-    private function load(string $path): array
+    private function load(?string $path = ''): array
     {
         if ($path === NULL) {
             return [];
         }
-        
+
         $configs = [];
         $finder = new Finder();
         $finder->files()->in($path)->name("*" . $this->extension);
